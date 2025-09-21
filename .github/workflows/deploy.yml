@@ -37,7 +37,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --base "proseflow"
+        run: npm run build -- --base "${{ steps.pages.outputs.base_path }}"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
