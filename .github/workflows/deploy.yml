@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: 'npm'
 
       - name: Setup GitHub Pages
@@ -37,7 +37,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --base "${{ steps.pages.outputs.base_path }}"
+        run: npm run build
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
