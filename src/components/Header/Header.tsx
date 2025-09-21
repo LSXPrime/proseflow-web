@@ -54,7 +54,7 @@ const Header = () => {
             <div className="relative flex items-center space-x-4 bg-black/50 backdrop-blur-3xl rounded-2xl px-5 py-3 border border-gray-800/50 shadow-2xl">
               {/* SVG Logo */}
               <div className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-900/90 to-purple-900/90 border border-indigo-500/40 shadow-lg">
-                <img src="https://raw.githubusercontent.com/LSXPrime/proseflow-web/public/icons/logo.svg" alt="ProseFlow Logo" className="w-8 h-8" />
+                <img src="./icons/logo.svg" alt="ProseFlow Logo" className="w-8 h-8" />
               </div>
 
               {/* Branding with refined typography */}

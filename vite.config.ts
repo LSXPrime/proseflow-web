@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/proseflow/',
+  base: '/proseflow-web/',
   plugins: [
     react({
       include: /\.(jsx|tsx)$/,

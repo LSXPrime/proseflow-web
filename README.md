@@ -2,7 +2,7 @@
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/LSXPrime/proseflow-web/deploy.yml?style=for-the-badge&logo=github)](https://github.com/LSXPrime/proseflow-web/actions)
 [![GitHub Stars](https://img.shields.io/github/stars/LSXPrime/ProseFlow?style=for-the-badge&logo=github&label=Star%20the%20App)](https://github.com/LSXPrime/ProseFlow)
-[![View Website](https://img.shields.io/badge/View%20Website-blue?style=for-the-badge&logo=react)](https://lsxprime.github.io/proseflow/)
+[![View Website](https://img.shields.io/badge/View%20Website-blue?style=for-the-badge&logo=react)](https://lsxprime.github.io/proseflow-web/)
 
 Welcome to the repository for the official landing page of **ProseFlow**, the universal AI co-pilot that melts into your workflow. This website is built with **Vite**, **React**, and **TypeScript** to provide a stunning, informative, and interactive experience for users learning about ProseFlow.
 
@@ -48,7 +48,7 @@ To run this website locally, you'll need to have Node.js and npm installed. Foll
     npm run dev
     ```
 
-    This will start the Vite development server. Open your browser and navigate to the address shown in your terminal (usually `http://localhost:5173/proseflow/`) to view the website. Changes to the source code will trigger a hot-reload.
+    This will start the Vite development server. Open your browser and navigate to the address shown in your terminal (usually `http://localhost:5173/proseflow-web/`) to view the website. Changes to the source code will trigger a hot-reload.
 
 ## Contributing
 
@@ -63,5 +63,5 @@ We appreciate your help in making the ProseFlow experience better for everyone!
 
 ## Links
 
-*   **Live Website:** [**https://lsxprime.github.io/proseflow/**](https://lsxprime.github.io/proseflow/)
+*   **Live Website:** [**https://lsxprime.github.io/proseflow-web/**](https://lsxprime.github.io/proseflow-web/)
 *   **ProseFlow GitHub Repository (Main App):** [**https://github.com/LSXPrime/ProseFlow**](https://github.com/LSXPrime/ProseFlow)
