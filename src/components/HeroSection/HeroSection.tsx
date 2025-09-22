@@ -54,42 +54,43 @@ const HeroSection = () => {
               <span>Download for {os}</span>
             </a>
             <a 
-              href="#" 
+              href="https://github.com/LSXPrime/ProseFlow"
               className="btn-secondary flex items-center justify-center space-x-2"
             >
               <Icon icon="lucide:github" />
               <span>Star on GitHub</span>
             </a>
           </motion.div>
-          
-          {/* Video element */}
-          <motion.div 
-            className="relative w-full max-w-4xl h-96 rounded-2xl overflow-hidden border border-gray-800"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            {!videoError ? (
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                controls={false}
-                className="w-full h-full object-cover"
-                preload="metadata"
-                onError={() => setVideoError(true)}
-              >
-                <source src="https://github.com/LSXPrime/_resources/raw/refs/heads/main/ProseFlow/video-hero_section-software.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              <div className="w-full h-full bg-gradient-to-br from-indigo-900/20 to-purple-900/20 flex items-center justify-center">
-                <p className="text-gray-400">Video failed to load</p>
-              </div>
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-          </motion.div>
+
+            {/* Video element */}
+            <motion.div
+                // The height is now responsive
+                className="relative w-full max-w-4xl h-[250px] md:h-[450px] rounded-2xl overflow-hidden border border-gray-800"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.6 }}
+            >
+                {!videoError ? (
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls={false}
+                        className="w-full h-full object-fill"
+                        preload="metadata"
+                        onError={() => setVideoError(true)}
+                    >
+                        <source src="https://github.com/LSXPrime/_resources/raw/refs/heads/main/ProseFlow/video-hero_section-software.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-indigo-900/20 to-purple-900/20 flex items-center justify-center">
+                        <p className="text-gray-400">Video failed to load</p>
+                    </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            </motion.div>
         </div>
       </div>
     </section>

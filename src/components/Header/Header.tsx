@@ -1,29 +1,19 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    // Close mobile menu when resizing to desktop
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setIsMenuOpen(false);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -109,7 +99,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Buttons */}
         <div className="md:hidden flex items-center space-x-3.5">
           <motion.a
             href="https://github.com/LSXPrime/ProseFlow"

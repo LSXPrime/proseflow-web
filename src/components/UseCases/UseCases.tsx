@@ -112,14 +112,14 @@ const UseCases = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Visual */}
             <div className="flex items-center justify-center">
-              <div className="w-full h-64 rounded-xl bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-gray-800 overflow-hidden">
+              <div className="w-full rounded-xl bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-gray-800 overflow-hidden">
                 <video 
                   autoPlay 
                   loop 
                   muted 
                   playsInline
                   controls={false}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full fill"
                   preload="metadata"
                 >
                   <source src={activePersonaData.video} type="video/mp4" />

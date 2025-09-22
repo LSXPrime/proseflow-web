@@ -138,7 +138,7 @@ function getCpuArchitecture() {
     // Check Navigator Platform for Linux-specific identifiers
     const platformChecks = [
         { arch: 'x64',   patterns: ['Linux x86_64'] },
-        { arch: 'arm64', patterns: ['Linux aarch64', 'Linux armv8l'] }
+        { arch: 'arm64', patterns: ['Linux aarch64', 'Linux armv8l', 'Linux armv81'] }
     ];
 
     for (const { arch, patterns } of platformChecks) {
