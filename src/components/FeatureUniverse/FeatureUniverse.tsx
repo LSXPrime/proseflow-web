@@ -139,13 +139,15 @@ const FeatureUniverse = () => {
             icon: 'lucide:zap',
             description: 'Core workflow features that keep you in the flow',
             position: {x: 15, y: 35},
-            mobilePosition: { x: 15, y: 15 },
+            mobilePosition: { x: 15, y: 10 },
             color: 'from-indigo-500 to-purple-500',
             features: [
                 'Universal Access via Global Hotkeys',
+                'Floating Action Orb',
+                'Drag-and-Drop Arc Menu',
                 'The Floating Action Menu',
                 'Smart Paste for Ultimate Speed',
-                'Flexible Output: In-Place or Windowed',
+                'Flexible Output: In-Place, Windowed, or Diff View',
                 'Iterative Refinement Window',
                 'Context-Aware Actions'
             ]
@@ -156,7 +158,7 @@ const FeatureUniverse = () => {
             icon: 'lucide:cpu',
             description: 'Run AI locally or connect to cloud providers',
             position: {x: 50, y: 10},
-            mobilePosition: { x: 55, y: 30 },
+            mobilePosition: { x: 55, y: 22 },
             color: 'from-purple-500 to-pink-500',
             features: [
                 'Run AI 100% Locally & Offline',
@@ -171,14 +173,16 @@ const FeatureUniverse = () => {
             icon: 'lucide:sliders-horizontal',
             description: 'Tailor ProseFlow to your exact needs',
             position: {x: 30, y: 70},
-            mobilePosition: { x: 25, y: 45 },
+            mobilePosition: { x: 25, y: 35 },
             color: 'from-cyan-500 to-blue-500',
             features: [
                 'Build Your Own AI "Actions"',
                 'Organize with Groups & Icons',
+                'Prioritize with Favorites',
                 'Drag-and-Drop Management',
                 'Share & Backup Your Workflow',
-                'Conflict-Free Importing'
+                'Conflict-Free Importing',
+                'Intuitive Hotkey Recording'
             ]
         },
         {
@@ -187,12 +191,14 @@ const FeatureUniverse = () => {
             icon: 'lucide:database',
             description: 'Manage and run powerful local AI models',
             position: {x: 65, y: 70},
-            mobilePosition: { x: 60, y: 60 },
+            mobilePosition: { x: 60, y: 50 },
             color: 'from-blue-500 to-cyan-500',
             features: [
                 'Integrated Model Library',
-                'Advanced Resource Management',
                 'GPU Acceleration',
+                'Specific GPU Selection',
+                'Flash Attention Support',
+                'Advanced Resource Management',
                 'Auto-Unload Idle Models',
                 'Load on Startup',
                 'Detailed Parameter Control'
@@ -204,14 +210,30 @@ const FeatureUniverse = () => {
             icon: 'lucide:bar-chart-2',
             description: 'Track usage and optimize performance',
             position: {x: 80, y: 40},
-            mobilePosition: { x: 30, y: 78 },
+            mobilePosition: { x: 30, y: 65 },
             color: 'from-teal-500 to-green-500',
             features: [
                 'Usage Analytics',
+                'Live Background Task Monitoring',
+                'Real-Time Application Log',
                 'Cloud Performance Monitoring',
                 'Live Hardware Monitor',
-                'Native LLM Log Viewer',
-                'Detailed Interaction History'
+                'Searchable Interaction History'
+            ]
+        },
+        {
+            id: 'collaboration',
+            title: 'COLLABORATION',
+            icon: 'lucide:users',
+            description: 'Sync your setup across devices or with your team',
+            position: {x: 48, y: 70},
+            mobilePosition: { x: 60, y: 80 },
+            color: 'from-green-500 to-emerald-500',
+            features: [
+                'Shared Workspace Sync',
+                'Password-Protected Encryption',
+                'Automatic & Manual Sync',
+                'Advanced Conflict Resolution'
             ]
         }
     ];
@@ -283,7 +305,7 @@ const FeatureUniverse = () => {
                 </motion.p>
 
                 <div
-                    className="relative h-[80vh] md:h-[70vh] w-full rounded-3xl border border-gray-800/50 bg-gray-900/20 backdrop-blur-md overflow-hidden"
+                    className="relative h-[100vh] md:h-[70vh] w-full rounded-3xl border border-gray-800/50 bg-gray-900/20 backdrop-blur-md overflow-hidden"
                     ref={containerRef}
                 >
                     <AnimatedGalaxyCanvas />
