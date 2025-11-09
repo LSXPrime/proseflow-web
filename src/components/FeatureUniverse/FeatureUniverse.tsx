@@ -142,11 +142,12 @@ const FeatureUniverse = () => {
             mobilePosition: { x: 15, y: 10 },
             color: 'from-indigo-500 to-purple-500',
             features: [
+                'Generate Text or Transform Selections',
                 'Universal Access via Global Hotkeys',
-                'Floating Action Orb',
+                'Intelligent Floating Orb & Menu',
                 'Drag-and-Drop Arc Menu',
-                'The Floating Action Menu',
                 'Smart Paste for Ultimate Speed',
+                'Read from Files (PDF, DOCX, etc.)',
                 'Flexible Output: In-Place, Windowed, or Diff View',
                 'Iterative Refinement Window',
                 'Context-Aware Actions'
@@ -177,10 +178,12 @@ const FeatureUniverse = () => {
             color: 'from-cyan-500 to-blue-500',
             features: [
                 'Build Your Own AI "Actions"',
-                'Organize with Groups & Icons',
-                'Prioritize with Favorites',
-                'Drag-and-Drop Management',
-                'Share & Backup Your Workflow',
+                'Dynamic Templating with Placeholders',
+                'Build Powerful Multi-Step Actions',
+                'Conditional Logic for Inputs',
+                'Organize with Groups, Icons & Favorites',
+                'Bulk & Drag-and-Drop Management',
+                'Duplicate, Export & Share Actions',
                 'Conflict-Free Importing',
                 'Intuitive Hotkey Recording'
             ]
